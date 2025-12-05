@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:formater": "node dist/formater/server/server.mjs",
-    "build": "react-scripts build"
-
+    "serve:ssr:formater": "node dist/formater/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
