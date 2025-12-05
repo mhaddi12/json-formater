@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+div {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border 0.2s ease-in-out;
+}
+
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5px 0 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error message */
+p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+p.error {
+  color: #d9534f;
+}
+
+p.success {
+  color: #28a745;
+}
+
+/* JSON Viewer Styling */
+ngx-json-viewer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  div {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  textarea {
+    font-size: 13px;
+    min-height: 180px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  textarea {
+    min-height: 150px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
