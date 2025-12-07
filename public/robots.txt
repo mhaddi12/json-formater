@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://formatme.netlify.app/sitemap.xml
+
+# Crawl-delay: 10
+# Uncomment above and set appropriate delay if needed
+
+# Disallow specific paths if needed
+# Disallow: /private/
+# Disallow: /admin/

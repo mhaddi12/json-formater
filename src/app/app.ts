@@ -2,9 +2,10 @@ import { Component, signal,NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NgxJsonViewerModule } from 'ngx-json-viewer';
+import {AdUnit} from './ad-unit/ad-unit';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,NgxJsonViewerModule],
+  imports: [RouterOutlet,FormsModule,NgxJsonViewerModule,AdUnit],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
